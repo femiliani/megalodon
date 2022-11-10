@@ -22,12 +22,14 @@ Megalodon
 .. _conda_dn: https://anaconda.org/bioconda/megalodon
 
 The goal of this fork is to switch mappy to bwappy. Therefore once you install this version you should also get bwappy going:
-```
-git clone --recursive https://github.com/femiliani/bwapy.git
-cd bwapy
-make bwa/libbwa.a 
-python setup.py install
-```
+
+::
+
+    git clone --recursive https://github.com/femiliani/bwapy.git
+    cd bwapy
+    make bwa/libbwa.a 
+    python setup.py install
+
 
 Megalodon is a research command line tool to extract high accuracy modified base and sequence variant calls from raw nanopore reads by anchoring the information rich basecalling neural network output to a reference genome/transcriptome.
 
