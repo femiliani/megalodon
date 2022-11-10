@@ -9,6 +9,7 @@ from collections import namedtuple, OrderedDict
 import mappy
 import pysam
 import numpy as np
+import bwappy
 
 from megalodon import megalodon_helper as mh, logging, __version__
 
