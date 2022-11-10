@@ -21,6 +21,14 @@ Megalodon
 .. |conda_dn| image:: https://img.shields.io/conda/dn/bioconda/megalodon
 .. _conda_dn: https://anaconda.org/bioconda/megalodon
 
+The goal of this fork is to switch mappy to bwappy. Therefore once you install this version you should also get bwappy going:
+```
+git clone --recursive https://github.com/femiliani/bwapy.git
+cd bwapy
+make bwa/libbwa.a 
+python setup.py install
+```
+
 Megalodon is a research command line tool to extract high accuracy modified base and sequence variant calls from raw nanopore reads by anchoring the information rich basecalling neural network output to a reference genome/transcriptome.
 
 Raw nanopore reads are processed by a single command to produce basecalls (FASTA/Q), reference mappings (SAM/BAM/CRAM), modified base calls (per-read and bedgraph/bedmethyl/modVCF), sequence variant calls (per-read and VCF) and more.
